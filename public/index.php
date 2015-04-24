@@ -1,5 +1,13 @@
 <?php
 
+    $db = new mysqli('localhost', 'root', 'root', 'scotchbox');
+
+    if($db->connect_errno > 0){
+        die('Unable to connect to database [' . $db->connect_error . ']');
+    }
+    
+    //$result = $db->query($sql);
+
     //include 'todo/task.php';
 
     //Procedural Form Processing Here
